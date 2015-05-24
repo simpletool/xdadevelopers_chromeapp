@@ -1,0 +1,24 @@
+{
+   "browser_action": {
+      "default_icon": "icon16.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "XDA-Developers",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrsWIbSkVm2ikw4QDz79/25CcH+wA+zPdYwiFF/T19YqROUJwZEmmZAis3uLOCaX5GqirmcUoRRzp31OEWxW4AQVpkdDPfXbmi3ZAcdAz/qR+JarWq39nA7CBGcvn6G/g8Z3N9jOKU93fIp0L3eqecrCsk/OJb2sLVgr6f/XjBywIDAQAB",
+   "manifest_version": 2,
+   "name": "Xda-Developers",
+   "permissions": [ "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.1",
+   "web_accessible_resources": [ "script.js" ]
+}
